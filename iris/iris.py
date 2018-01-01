@@ -14,9 +14,10 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 # Load dataset
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+# dataset_source = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+dataset_source = "data/iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = pandas.read_csv(url, names=names)
+dataset = pandas.read_csv(dataset_source, names=names)
 
 # shape
 print(dataset.shape)
